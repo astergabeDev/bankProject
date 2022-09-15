@@ -1,3 +1,5 @@
+package Programa;
+
 public class Pessoa {
 
     private static int id;
@@ -44,5 +46,11 @@ public class Pessoa {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String toString(){
+        return "\nNome: " + this.getNome() +
+                "\nCpf: " + this.getCpf() +
+                "\nEmail: " + this.getEmail();
     }
 }
