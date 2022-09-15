@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a690b42-8006-447b-b135-7ecfffc76c1f" name="Changes" comment="fixed some stuff">
+    <list default="true" id="3a690b42-8006-447b-b135-7ecfffc76c1f" name="Changes" comment="added conta stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Programa/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programa/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Programa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programa/AgenciaBancaria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663260717076</updated>
-      <workItem from="1663260718260" duration="1811000" />
+      <workItem from="1663260718260" duration="3985000" />
     </task>
     <task id="LOCAL-00001" summary="pessoa class setup">
       <created>1663261406896</created>
@@ -77,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663262212878</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added conta stuff">
+      <created>1663262547597</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663262547597</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pessoa class setup" />
     <MESSAGE value="fixed some stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some stuff" />
+    <MESSAGE value="added conta stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="added conta stuff" />
   </component>
 </project>
