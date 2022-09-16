@@ -9,7 +9,7 @@ public class Pessoa {
     private String email;
 
 
-    public Pessoa(String nome, String cpf, String email){
+    public Pessoa(String nome, String cpf, String email) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
@@ -48,8 +48,8 @@ public class Pessoa {
         this.email = email;
     }
 
-    public String toString(){
-        return "\nNome: " + this.getNome() +
+    public String toString() {
+        return  "\nNome: " + this.getNome() +
                 "\nCpf: " + this.getCpf() +
                 "\nEmail: " + this.getEmail();
     }
