@@ -113,7 +113,53 @@ public class AgenciaBancaria {
         }else {
             System.out.println("Não foi possivel achar a conta para deposito");
         }
+        operacoes();
     }
 
+    public static void sacar(){
+
+        System.out.println("Insira o numero da conta: ");
+        int numeroConta = input.nextInt();
+
+        Conta conta = encontrarConta(numeroConta);
+
+        if (conta != null){
+            System.out.println("Qual valor deseja sacar? ");
+            double valorSaque = input.nextDouble();
+            conta.sacar(valorSaque);
+            System.out.println("Valor sacado com sucesso!");
+        }else {
+            System.out.println("Não foi possivel achar a conta para saque");
+        }
+        operacoes();
+    }
+
+    public static void transferir(){
+
+        System.out.println("Insira o numero da conta remetente: ");
+        int contaRemetente = input.nextInt();
+
+        Conta remetente = encontrarConta(contaRemetente);
+
+        if (remetente != null){
+            System.out.println("Insira o numero da conta destinataria: ");
+            int contaDestinataria = input.nextInt();
+
+            Conta destinataria = encontrarConta(contaDestinataria);
+
+            if (destinataria != null) {
+                System.out.println("Qual valor deseja transferir? ");
+                double valorTrans = input.nextDouble();
+
+                remetente.transferir(destinataria, valorTrans);
+                System.out.println("Valor transferido com sucesso!");
+            }
+        }else {
+            System.out.println("Não foi possivel concluir a transferencia");
+        }
+
+
+
+    }
 
 }
