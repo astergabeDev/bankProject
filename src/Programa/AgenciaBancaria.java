@@ -1,5 +1,7 @@
 package Programa;
 
+import utilitarios.Utils;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -111,6 +113,8 @@ public class AgenciaBancaria {
             double valorDeposito = input.nextDouble();
             conta.depositar(valorDeposito);
             System.out.println("Valor depositado com sucesso!");
+            System.out.println("Seu novo saldo é de: " + Utils.doubleToString(conta.getSaldo()));
+
         } else {
             System.out.println("Não foi possivel achar a conta para deposito");
         }
@@ -128,6 +132,8 @@ public class AgenciaBancaria {
             double valorSaque = input.nextDouble();
             conta.sacar(valorSaque);
             System.out.println("Valor sacado com sucesso!");
+            System.out.println("Seu novo saldo é de: " + Utils.doubleToString(conta.getSaldo()));
+
         } else {
             System.out.println("Não foi possivel achar a conta para saque");
         }
@@ -152,6 +158,8 @@ public class AgenciaBancaria {
 
                 remetente.transferir(destinataria, valorTrans);
                 System.out.println("Valor transferido com sucesso!");
+                System.out.println("Seu novo saldo é de: " + Utils.doubleToString(remetente.getSaldo()));
+
             } else {
                 System.out.println("Não foi possivel achar a conta destinataria");
             }

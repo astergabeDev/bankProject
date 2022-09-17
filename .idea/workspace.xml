@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a690b42-8006-447b-b135-7ecfffc76c1f" name="Changes" comment="finished deposit, withdraw and transfer">
+    <list default="true" id="3a690b42-8006-447b-b135-7ecfffc76c1f" name="Changes" comment="1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Programa/AgenciaBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programa/AgenciaBancaria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Programa/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programa/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Programa/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programa/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilitarios/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilitarios/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <workItem from="1663260718260" duration="6316000" />
       <workItem from="1663283642640" duration="197000" />
       <workItem from="1663283848056" duration="290000" />
-      <workItem from="1663284148029" duration="7729000" />
+      <workItem from="1663284148029" duration="9904000" />
     </task>
     <task id="LOCAL-00001" summary="pessoa class setup">
       <created>1663261406896</created>
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663336722688</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1.0">
+      <created>1663340706870</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663340706870</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +150,8 @@
     <MESSAGE value="added account creation" />
     <MESSAGE value="added account withdraw" />
     <MESSAGE value="finished deposit, withdraw and transfer" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished deposit, withdraw and transfer" />
+    <MESSAGE value="1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
