@@ -15,8 +15,6 @@ public class AgenciaBancaria {
         contasBancarias = new ArrayList<Conta>();
 
         operacoes();
-
-
     }
 
     public static void operacoes() {
@@ -33,7 +31,9 @@ public class AgenciaBancaria {
             System.out.println("|     3 - Sacar          |");
             System.out.println("|     4 - Transferir     |");
             System.out.println("|     5 - Listar         |");
-            System.out.println("|     6 - Sair           |");
+            System.out.println("|     6 - Alterar dados  |");
+            System.out.println("|     7 - Sair           |");
+
 
             int operacao = input.nextInt();
 
@@ -55,6 +55,9 @@ public class AgenciaBancaria {
                     listar();
                     break;
                 case 6:
+                    alterarDados();
+                    break;
+                case 7:
                     System.out.println("Fechando programa...");
                     System.out.println("...");
                     System.out.println("...");
@@ -100,7 +103,6 @@ public class AgenciaBancaria {
         }
         return conta;
     }
-
     public static void depositar() {
 
         System.out.println("Insira o numero da conta: ");
@@ -176,6 +178,44 @@ public class AgenciaBancaria {
             }
         } else {
             System.out.println("Nao há contas cadastradas!");
+        }
+
+    }
+
+    public static void alterarDados(){
+
+        System.out.println("Insira o numero da conta que deseja alterar os dados: ");
+        int numeroConta = input.nextInt();
+
+        Conta conta = encontrarConta(numeroConta);
+
+        if(conta != null){
+            System.out.println("Quais dados você deseja alterar: ");
+            System.out.println("1 - Nome");
+            System.out.println("2 - Cpf");
+            System.out.println("3 - Email");
+            int escolha = input.nextInt();
+
+            switch (escolha){
+                case 1:
+                    System.out.println("Insira o novo nome: ");
+                    String novoNome = input.next();
+                    conta.getPessoa().setNome(novoNome);
+                    break;
+                case 2:
+                    System.out.println("Insira o novo cpf: ");
+                    String novoCpf = input.next();
+                    conta.getPessoa().setCpf(novoCpf);
+                    break;
+                case 3:
+                    System.out.println("Insira o novo email: ");
+                    String novoEmail = input.next();
+                    conta.getPessoa().setEmail(novoEmail);
+                    break;
+                default:
+                    System.out.println("Insira uma opção valida");
+                    break;
+            }
         }
 
     }
