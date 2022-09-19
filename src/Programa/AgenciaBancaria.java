@@ -216,6 +216,8 @@ public class AgenciaBancaria {
                     System.out.println("Insira uma opção valida");
                     break;
             }
+        }else{
+            System.out.println("Insira um numero de conta válido.");
         }
 
     }
